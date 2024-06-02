@@ -1,0 +1,31 @@
+package com.Yadeedya.Yadeedya_social_media.models;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.ManyToOne;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class Message {
+
+	private Integer id;
+	private String content;
+	private String image;
+	
+	@ManyToOne
+	private User user;
+
+	@ManyToOne
+	private Chat chat;
+
+	private LocalDateTime timestamp;
+
+}

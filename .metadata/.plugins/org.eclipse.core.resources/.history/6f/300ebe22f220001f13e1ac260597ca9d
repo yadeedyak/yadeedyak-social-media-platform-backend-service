@@ -1,0 +1,8 @@
+package com.Yadeedya.Yadeedya_social_media.config;
+
+import javax.crypto.SecretKey;
+
+public class JwtProvider {
+
+	private SecretKey key=Keys
+}

@@ -1,0 +1,27 @@
+package com.Yadeedya.Yadeedya_social_media.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.Yadeedya.Yadeedya_social_media.models.Comment;
+import com.Yadeedya.Yadeedya_social_media.models.User;
+
+public class CommentServiceImplementation implements CommentService{
+
+	@Autowired
+	PostService postService;
+	@Autowired
+	UserService userService;
+	@Override
+	public Comment createComment(Comment comment, Integer postid, Integer userid) throws Exception {
+		User user=userService.findUserById(userid);
+		
+		return null;
+	}
+
+	@Override
+	public Comment likeComment(Integer commentid, Integer userid) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

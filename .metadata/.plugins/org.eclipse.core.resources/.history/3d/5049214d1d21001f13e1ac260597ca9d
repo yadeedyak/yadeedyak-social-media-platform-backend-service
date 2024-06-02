@@ -1,0 +1,21 @@
+package com.Yadeedya.Yadeedya_social_media.service;
+
+import java.util.List;
+
+import com.Yadeedya.Yadeedya_social_media.models.Story;
+
+public class StoryServiceImplementation implements StroyService{
+
+	@Override
+	public Story createStory(Story story, User user) {
+		
+		
+	
+	}
+
+	@Override
+	public List<Story> findStoryByUserId(Integer userid) {
+		
+	}
+
+}

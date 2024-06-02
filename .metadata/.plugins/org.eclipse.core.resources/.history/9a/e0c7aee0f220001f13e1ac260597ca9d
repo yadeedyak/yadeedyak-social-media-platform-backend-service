@@ -1,0 +1,12 @@
+package com.Yadeedya.Yadeedya_social_media.config;
+
+import javax.crypto.SecretKey;
+
+import org.springframework.data.jpa.repository.query.KeysetScrollDelegate;
+
+import io.jsonwebtoken.security.Keys;
+
+public class JwtProvider {
+
+	private SecretKey key=Keys.hmacShaKeyFor(JwtConstant.SECRET_KEY.getBytes());
+}
